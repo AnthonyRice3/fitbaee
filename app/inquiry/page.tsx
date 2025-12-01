@@ -105,7 +105,7 @@ export default function InquiryPage() {
   return (
     <main className="min-h-screen bg-white text-black py-16 px-4 font-sans">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-yellow-700 text-center">Client Inquiry Form</h1>
+        <h1 className="text-4xl font-bold mb-8 text-yellow-700 text-center">Client Consultation Form</h1>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="flex gap-4">
             <div className="flex-1">

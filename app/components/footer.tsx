@@ -10,7 +10,7 @@ export default function Footer() {
           <span className="mx-2">|</span>
           <a href="/schedule-appointment" className="hover:text-yellow-950 transition">Schedule Appointment</a>
         </div>
-        <div className="text-xs mt-2 md:mt-0">Made with Next.js & Tailwind CSS</div>
+        <div className="text-xs mt-2 md:mt-0">Book a Consultation & Take the First Step Towards Your Goals</div>
       </div>
     </footer>
   );

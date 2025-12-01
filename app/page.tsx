@@ -92,9 +92,9 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">Train with Fitbaee</h2>
             
             
-            <p className="text-lg mb-4">My journey began with the vision of delivering quality service with great result to you. At Both Luxxe BodySpa & Homegrown we take pride in crafting each experience with love and meticulous attention. We have something to benefit everyone. Discover our offerings and ENJOY THE BENEFITS OF LUXURY AFFORDABLE FITNESS, HEALTH AND WELLNESS</p>
+            <p className="text-lg mb-4">My journey began with the vision of delivering quality service with great result to you. At Both Luxxe BodySpa & Homegrown we take pride in crafting each experience with love and meticulous attention. We have something to benefit everyone. Discover our offerings and ENJOY THE BENEFITS OF LUXURY AFFORDABLE FITNESS, HEALTH AND WELLNESS. Schedule your consultation today to start your transformation!</p>
             
-          <Link href="/inquiry" className="inline-block px-8 py-3 bg-yellow-700 text-black font-bold rounded-full shadow-lg hover:bg-yellow-950 transition text-lg">Work With Fitbaee</Link>
+          <Link href="/inquiry" className="inline-block px-8 py-3 bg-yellow-700 text-black font-bold rounded-full shadow-lg hover:bg-yellow-950 transition text-lg">Schedule Consultation</Link>
         
           </div>
         </div>

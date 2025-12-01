@@ -10,10 +10,16 @@
   --yellow950: #422006; /* Tailwind yellow-950 */
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-family: var(--font-oswald), 'Inter', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oswald), 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 700;
 }
 
 a {
