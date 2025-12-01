@@ -124,7 +124,7 @@ export default function ServicesSection() {
   return (
     <motion.section
       id="services"
-      className="py-2 px-4 bg-yellow-50 text-black"
+      className="py-2 pb-4 px-4 bg-yellow-50 text-black"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -153,27 +153,26 @@ export default function ServicesSection() {
             return (
               <motion.div
                 key={card.title}
-                className={`p-6 bg-yellow-950 text-black font-extrabold rounded-lg shadow-lg border-2 flex flex-col justify-between ${gridClass}`}
+                className={`p-6 bg-yellow-800 text-black font-extrabold rounded-lg shadow-lg border-2 flex flex-col justify-between ${gridClass}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, delay: 0.1 * idx }}
               >
                 <div>
-                  <h4 className="text-xl font-bold mb-2 text-yellow-700">{card.title}</h4>
+                  <h4 className="text-xl font-bold mb-2 text-yellow-100">{card.title}</h4>
                   <p className="mb-4 text-white">{card.desc}</p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
                   <span className="text-white/70 text-sm">{card.duration}</span>
-                  <span className="text-yellow-700 font-bold text-lg">{card.price}</span>
+                  <span className="text-yellow-100 font-bold text-lg">{card.price}</span>
                 </div>
+                <Link href={`/schedule-appointment?service=${encodeURIComponent(card.title)}`} className="mt-2 inline-block px-4 py-2 bg-yellow-700 text-black font-bold rounded-full shadow hover:bg-yellow-950 transition text-sm text-center">Schedule Appointment</Link>
               </motion.div>
             );
           })}
         </div>
-        <div className="flex justify-center mt-5">
-          <Link href="/inquiry" className="inline-block px-8 py-3 bg-yellow-700 text-black font-bold rounded-full shadow-lg hover:bg-yellow-950 transition text-lg">Work With Fitbaee</Link>
-        </div>
+        
       </div>
     </motion.section>
   );

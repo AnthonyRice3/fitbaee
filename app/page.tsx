@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ServicesSection from "./components/services";
+import Gallery from "./components/gallery";
 import Navbar from "./components/navbar";
 
 
@@ -91,8 +92,10 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">Train with Fitbaee</h2>
             
             
-            <p className="text-lg mb-4">Fitbaee is a passionate fitness trainer dedicated to helping clients achieve their goals through personalized coaching, motivation, and support. With years of experience and a commitment to holistic wellness, Fitbaee empowers you to become your best self.</p>
-            {/* <Link href="#inquiry" className="inline-block px-8 py-3 bg-yellow-950 text-white font-bold rounded-full shadow-lg hover:bg-yellow-950 transition">Get Started</Link> */}
+            <p className="text-lg mb-4">My journey began with the vision of delivering quality service with great result to you. At Both Luxxe BodySpa & Homegrown we take pride in crafting each experience with love and meticulous attention. We have something to benefit everyone. Discover our offerings and ENJOY THE BENEFITS OF LUXURY AFFORDABLE FITNESS, HEALTH AND WELLNESS</p>
+            
+          <Link href="/inquiry" className="inline-block px-8 py-3 bg-yellow-700 text-black font-bold rounded-full shadow-lg hover:bg-yellow-950 transition text-lg">Work With Fitbaee</Link>
+        
           </div>
         </div>
       </motion.section>
@@ -100,7 +103,8 @@ export default function Home() {
       {/* Services Section */}
       <ServicesSection />
 
-      
+      {/* Gallery Section */}
+      <Gallery />
 
       {/* Testimonials Section */}
       <motion.section
