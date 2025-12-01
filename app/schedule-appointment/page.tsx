@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import emailjs from '@emailjs/browser';
 
@@ -53,6 +54,8 @@ export default function ScheduleAppointmentPage() {
 
   return (
     <main className="min-h-screen bg-white text-black py-16 px-4 font-sans">
+      
+      <Suspense fallback={<div>Loading...</div>}>
       <div className="max-w-xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-yellow-700 text-center">Schedule Appointment</h1>
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -110,6 +113,7 @@ export default function ScheduleAppointmentPage() {
           <button type="submit" className="w-full py-3 bg-yellow-700 text-black font-bold rounded-full shadow-lg hover:bg-yellow-950 transition" disabled={loading}>{loading ? "Sending..." : "Schedule"}</button>
         </form>
       </div>
+        </Suspense>
     </main>
   );
 }
